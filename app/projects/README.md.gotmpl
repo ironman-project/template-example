@@ -1,0 +1,13 @@
+# This template showcases the list of Projects
+
+## Using context
+
+{{ range .Params.projects }}
+  *  {{ . -}}
+{{ end }}
+
+## Declaring a variable value Name
+
+{{range $element := .Params.projects}}
+  *  {{ $element -}}
+{{ end }}
