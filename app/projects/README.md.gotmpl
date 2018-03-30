@@ -2,12 +2,12 @@
 
 ## Using context
 
-{{ range .Params.projects }}
+{{ range .Values.projects }}
   *  {{ . -}}
 {{ end }}
 
 ## Declaring a variable value Name
 
-{{range $element := .Params.projects}}
+{{range $element := .Values.projects}}
   *  {{ $element -}}
 {{ end }}

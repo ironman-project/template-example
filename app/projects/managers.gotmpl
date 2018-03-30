@@ -2,13 +2,13 @@ This file shows how to use a map field values
 
 Managers using an explicit reference
 
-Infrastructure: {{.Params.projectManagers.infrastructure}}
+Infrastructure: {{.Values.projectManagers.infrastructure}}
 Platform:      {{.Params.projectManagers.platform}}
-Tooling:       {{.Params.projectManagers.tooling}}
+Tooling:       {{.Values.projectManagers.tooling}}
 
 
 Managers using  a range
 
-{{range $key, $element := .Params.projectManagers}}
+{{range $key, $element := .Values.projectManagers}}
 {{ $key }}:  {{ $element -}}
 {{ end }}
