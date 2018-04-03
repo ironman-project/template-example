@@ -1,0 +1,6 @@
+id: controller
+type: file
+name: Controller Generator
+description: Generates a controller
+fileTypeOptions:
+  defaultTemplateFile: controller.go
