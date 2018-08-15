@@ -1,2 +1,2 @@
-id: app
+id: app # This ID is optional, if empty it is infered from the directory name
 description: Application Generator
