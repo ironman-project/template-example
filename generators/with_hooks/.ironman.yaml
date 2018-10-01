@@ -1,0 +1,9 @@
+description: A generator showcasing the ironman hooks feature
+hooks:
+        preGenerate:
+                - name: "echo"
+                  args: ["-n", "Running pre-generate hook from test generator\n"]
+
+        postGenerate:
+                - name: "echo"
+                  args: ["-n", "Running post-generate hook from test generator\n"]
